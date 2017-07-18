@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fmt.Printf(...)
+# key: printf
+# --
+fmt.Printf("${1:message}", ${2:args})$0

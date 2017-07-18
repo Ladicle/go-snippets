@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: const (...)
+# key: constmulti
+# --
+const (
+  ${1:name} ${2:type}$0
+)

@@ -1,0 +1,5 @@
+# -*- mode:snippet -*-
+# name: slice
+# key: slice
+# --
+[]${1:name}{$0}

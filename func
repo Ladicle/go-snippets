@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: func
+# key: func
+# --
+// ${4:comment}
+func ${1:name}(${2:argument}) ${3:return} {
+  $0
+}

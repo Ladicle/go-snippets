@@ -1,0 +1,7 @@
+# -*- mode:snippet -*-
+# name: two-dimensional slice
+# key: slicetwo
+# --
+[]${1:name}{
+  []${1:name}{$2}$0
+}

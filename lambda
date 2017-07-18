@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: lambda func
+# key: lambda
+# --
+func(${1:argument}) ${2:return} {
+  $0
+}()

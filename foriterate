@@ -1,0 +1,7 @@
+# -*- mode:snippet -*-
+# name: for iterate
+# key: foriterate
+# --
+for i:=${1:0}; i<${2:condition}; i++ {
+  $0
+}

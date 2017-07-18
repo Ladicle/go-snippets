@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: channel
+# key: channel
+# --
+${1:c} := make(chan ${2:type})
+$0

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for range
+# key: forange
+# --
+for ${3:indexOrKey}, ${2:value} := range ${1:target} {
+  $0
+}
