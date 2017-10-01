@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: file
+# key: file
+# --
+file, err := os.Open(${1:file_path})
+if err != nil {
+  ${2:error_handling}
+}
+defer file.Close()
+
+sc := bufio.NewScanner(file)
+for ; sc.Scan(); {
+    if err := sc.Err(); err != nil {
+        ${3:error_handling}
+        break
+    }
+    $0
+}

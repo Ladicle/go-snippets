@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: encode_json
+# key: encode_json
+# --
+${1:json_byte}, err := json.Marshal(${1:enc_target})
+if err != nil {
+    $0
+}

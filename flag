@@ -1,0 +1,10 @@
+# -*- mode:snippet -*-
+# name: flag-snippet
+# key: flag-snippet
+# --
+flag.Usage = func(){${6:usage}}
+fs := flag.NewFlagSet(${1:sub_cmd}, flag.ExitOnError)
+fs.StringVar(&${2:var}, ${3:short_name}, ${4:default}, ${5:description})
+if err := fs.Parse(args); err != nil {
+	$0
+}

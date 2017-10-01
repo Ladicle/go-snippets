@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: decode_json
+# key: decode_json
+# --
+if err := json.Unmarshal(bytes, &${1:dec_target}); err != nil {
+    $0
+}

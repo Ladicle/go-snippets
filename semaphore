@@ -1,0 +1,7 @@
+# -*- mode:snippet -*-
+# name: errgroup
+# key: errgroup
+# --
+eg := errgroup.Group{}  // "golang.org/x/sync/errgroup"
+eg.Go(func() error { return $0 })
+err := eg.Wait()

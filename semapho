@@ -1,0 +1,15 @@
+# -*- mode:snippet -*-
+# name: semaphore
+# key: semaphore
+# --
+var wg sync.WaitGroup
+c := make(chan ${1:type}${2:, cap})
+
+wg.Add(1)
+go func(){
+  defer wg.Done()
+  $0
+}()
+
+close(c)
+wg.Wait()

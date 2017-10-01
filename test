@@ -3,5 +3,5 @@
 # key: test
 # --
 func Test${1:name}(t *testing.T) {
-	$0
+	${2:t.Fatalf("%s is not expected value.", value)}
 }

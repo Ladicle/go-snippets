@@ -1,0 +1,11 @@
+# -*- mode:snippet -*-
+# name: polling
+# key: polling
+# --
+c := make(chan struct{}, 2) // if buffer number less than 2, len(c) always return 0
+go func() {
+  $0
+	c <- struct{}{}
+}()
+<- c
+close(c)
