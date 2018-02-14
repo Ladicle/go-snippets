@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: struct func
-# key: funcstruct
+# name: struct function with comment
+# key: strfuncc
 # --
 // ${5:comment}
 func (${1:structName}) ${2:name}(${3:argument}) ${4:return} {
